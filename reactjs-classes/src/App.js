@@ -23,9 +23,15 @@ export default class App extends Component {
   render() {
     return (
       <div className="container">
-        <h1>React e <em>Class Components</em></h1>
-        <button onClick={this.handleClick}>Clique aqui</button>
-        <ul>{this.state.clickArray.map(item => <li key={item}>{item}</li>)}</ul>
+        <h1>React <em>Class Components</em></h1>
+
+        <button onClick={this.handleClick}>Insert timestamp</button>
+
+        <ul>
+          {this.state.clickArray.map(item =>
+            <li key={item}>{item}</li>
+          )}
+        </ul>
       </div>
     );
   }
